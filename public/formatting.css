@@ -1,0 +1,19 @@
+body {
+    font-family: "Verdana";
+    font-size: 24;
+    text-align: center;
+    color: Lightcoral;
+    background-color: Maroon;
+    width: 50%;
+    margin-left: 400px;
+}
+
+ul {
+    text-align: center;
+    list-style-position: inside;
+    list-style-type: square;
+}
+
+a {
+    color: antiquewhite;
+}
