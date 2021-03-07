@@ -2,11 +2,6 @@ const http = require('http')
 const fs = require('fs')
 const port = process.env.PORT || 3000
 
-var express = require('express');
-var path = require('path');
-
-app.use(express.static(path.join(__dirname, 'public')));
-
 // reads files
 function serveStaticFile(res, path, contentType, responseCode = 200) {
 	// asynchronous method for reading files
@@ -28,11 +23,8 @@ const server = http.createServer((req,res) => {
 		case '':
 			serveStaticFile(res, '/public/all-about-me.html', 'text/html')
 			break
-		case '/formatting':
-			serveStaticFile(res, '/public/formatting.css', 'text/css')
-			break
-		case '/Me.JPG':
-			serveStaticFile(res, '/public/Me.JPG', 'image/JPG')
+		case '/img/Me.jpg':
+			serveStaticFile(res, '/public/img/Me.jpg', 'image/jpg')
 			break
 		default:
 			serveStaticFile(res, '/public/404.html', 'text/html', 404)

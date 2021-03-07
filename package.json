@@ -1,0 +1,11 @@
+{
+    "name": "app-service-syllabus",
+    "description": "All About Me",
+    "version": "0.0.1",
+    "private": true,
+    "license": "MIT",
+    "author": "Ren Gernes",
+    "scripts": {
+        "start": "index.js"
+    }
+}
